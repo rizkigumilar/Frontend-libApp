@@ -1,12 +1,12 @@
 .button {
-	background-color: #f4cf5d;
+	background-color: rgb(13, 16, 202);
 	border: none;
-	color: black;
+	color: white;
 	border-radius: 8px;
-	height: 38px;
-	width: 80px;
-	margin-right: 20px; 
-	margin-top: 0px;
+	height: 50px;
+	width: 100px;
+	margin-right: 40px; 
+	margin-top: -20px;
 	font-size: 15px;
 	outline: none;
 	cursor: pointer;
@@ -14,9 +14,9 @@
 }
 
 .buttonSave {
-	background-color: #f4cf5d;
+	background-color: rgb(13, 16, 202);
 	border: none;
-	color: black;
+	color: white;
 	border-radius: 8px;
 	height: 38px;
 	width: 80px;

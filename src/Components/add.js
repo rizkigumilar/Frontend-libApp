@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import {
 	Modal,
-	Dropdown,
-	DropdownMenu,
-	DropdownItem,
-	DropdownToggle,
 	ModalHeader,
 	ModalBody,
 	ModalFooter,
@@ -17,7 +13,7 @@ import {
 } from 'reactstrap';
 import '../Assets/button.css';
 import { postBook } from '../Publics/redux/actions/book';
-//import Flex from './'
+
 class Add extends Component {
 	constructor(props) {
 		super(props);
@@ -49,10 +45,10 @@ class Add extends Component {
 				case 'Sosial':
 					idCat = 4;
 					break;
-				case 'Teknologi':
+				case 'Tekno':
 					idCat = 3;
 					break;
-				case 'Filsafat':
+				case 'Fiksi':
 					idCat = 2;
 					break;
 				default:
@@ -79,7 +75,7 @@ class Add extends Component {
 		return (
 			<div>
 				<button class="button" onClick={this.toggle}>
-					ADD
+					ADD BOOK
 				</button>
 				<Modal isOpen={this.state.modal} toggle={this.toggle} className="{this.props.className} modal-lg">
 					<ModalHeader toggle={this.toggle}>

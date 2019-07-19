@@ -38,7 +38,8 @@ class Book extends Component {
                                   <img src={item.image} alt="gambar" />
                                   <div>
                                       <p>{(item.name)}</p>
-                                      <p>by : {(item.writer)}</p>
+                                      <p style={{fontSize:'12px'}}>by : {(item.writer)}</p>
+                                      <p>{item.StatusBorrow === 1 ? <p style={{fontSize:'14px',fontWeight:'bold',backgroundColor:'red',textAlign:'center',borderRadius:'8px',width:'100px',float:'right',marginTop:'20px'}}> Not  Available</p> : <p style={{fontSize:'14px',fontWeight:'bold',backgroundColor:'green',textAlign:'center',borderRadius:'8px',width:'100px',float:'right',marginTop:'20px'}}>Available</p>}</p>
                                   </div>
                               </div>
                           </Link>

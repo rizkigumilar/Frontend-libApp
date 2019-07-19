@@ -23,6 +23,14 @@ export const postBook = (data) => {
     }
 }
 
+export const editBook = (data, idBook) => {
+    console.log(data.description)
+    return {
+        type: 'EDIT_BOOK',
+        payload: axios.patch(`http://localhost:3001/book/${idBook}`,data),
+    }
+}
+
 export const deleteBook = (idBook) => {
     return {
       type: 'DELETE_BOOK',

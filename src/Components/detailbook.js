@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import {getBookid} from '../Publics/redux/actions/book';
 import {deleteBook} from '../Publics/redux/actions/book';
+import Borrow from './borrow'
+import Return from './return'
 
 
 class Book extends Component {
@@ -45,8 +47,10 @@ class Book extends Component {
                                   </div>
                                   <div className="content">
                                   <img className={'imageBook'} src={item.image} alt={item.name} />
+                                  <p>{item.StatusBorrow === 1 ?  <Return id={item.idBook}/>: <Borrow/> }</p>
                                       <p className='title'>{(item.name)}</p>
                                       <p className='writer'>by : {(item.writer)}</p>
+                                      <p>{item.StatusBorrow === 1 ? <p style={{fontSize:'14px',fontWeight:'bold',backgroundColor:'red',textAlign:'center',borderRadius:'8px',width:'100px',marginTop:'20px', color:'white'}}>Not Available</p> : <p style={{fontSize:'14px',fontWeight:'bold',backgroundColor:'green',textAlign:'center',borderRadius:'8px',width:'100px',marginTop:'20px',color:'white'}}>Available</p>}</p>
                                       <p>{(item.description)}</p>
                                   </div>
                               </div>

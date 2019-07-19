@@ -3,10 +3,11 @@ import { Route, Redirect, BrowserRouter as Router } from 'react-router-dom'
 import Navbar from '../Components/navbar';
 import search from '../Components/search';
 import Book from '../Components/listbook';
-import Detail from '../Components/detailbook'
+import Detail from '../Components/detailbook';
+import Edit from '../Components/edit';
 
 
-class Home extends Component {
+class Routing extends Component {
   render () {
     return (
       <div>
@@ -15,11 +16,12 @@ class Home extends Component {
       <Route exact path={"/book"} component={Navbar} />
       <Route exact path={"/book"} component={search} />
       <Route exact path={"/book"} component={Book} />
-      <Route exact path={"/book/:idBook"} component={Detail} />
+      <Route path={"/book/:idBook"} component={Detail} />
+      <Route exact path={"/book/:idBook/edit"} component={Edit} />
       </Router>
       </div>
     );
   }
 }
 
-export default Home;
+export default Routing;
