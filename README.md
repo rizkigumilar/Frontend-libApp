@@ -25,6 +25,10 @@ $ npm start
 ### Demo application
 
 ![](src/Assets/LibraryHome.png)
+![](src/Assets/ModalADD.png)
+![](src/Assets/DetailBook.png)
+![](src/Assets/ModalEdit.png)
+![](src/Assets/ModalPinjam.png)
 
 
 ### Happy Coding
