@@ -7,6 +7,12 @@ export const getBook = () => {
         payload: axios.get(`http://localhost:3001/book`)
     }
 }
+export const searchBook = () => {
+    return {
+        type: 'SEARCH_BOOK',
+        payload: axios.get(`http://localhost:3001/book?search=`)
+    }
+}
 
 export const getBookid = (idBook) => {
     return {

@@ -107,6 +107,18 @@ const book = (state = initialState, action) => {
                 isFulfilled: true,
                 bookList: [state.bookList, action.payload.data[0]]
             };
+        case 'SEARCH_BOOK':
+            return {
+                ...state,
+                isLoading: false,
+                isFulfilled: true,
+                bookList: action.payload.data.result
+            }
+        case 'PAGE_LIST':
+            return {
+              ...state,
+              books: action.dataPage.result
+            }
         default:
             return state;
     }

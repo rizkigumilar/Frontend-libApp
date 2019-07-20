@@ -15,7 +15,7 @@ export const getBorrow = () => {
 }
 
 export const updateBorrow = (idBook, data) => {
-    console.log(idBook+'aku')
+    console.log(idBook)
     return {
         type: 'PATCH_BORROW',
         payload: axios.patch(`http://localhost:3001/borrow/${idBook}`, {penalty: data})
