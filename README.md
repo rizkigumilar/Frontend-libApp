@@ -24,7 +24,7 @@ $ npm start
 
 ### Demo application
 
-![home](frontend-libApp/src/Assets/LibraryHome.png)
+![](src/Assets/LibraryHome.png)
 
 
 ### Happy Coding
